@@ -153,4 +153,7 @@
     <button type="reset" class="button button-flat" (click)="onReset()">Reset</button>
     <button type="submit" class="button">Sign up</button>
   </p>
+@if (form.touched && form.invalid) {
+  <p class="control-error">Invalid Form</p>
+}
 </form>
